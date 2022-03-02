@@ -1,3 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@300;400;500;700&display=swap');
+
+@layer base {
+    body {
+        @apply font-antonio bg-[#070724] text-white;
+    }
+}
+
+@layer components {
+    .stats {
+        @apply border border-gray-300 p-2 md:py-4 md:px-8 ;
+    }
+    .stats h4 {
+        @apply text-gray-700 text-2xl uppercase mb-2;
+    }
+    .stats h2 {
+        @apply text-4xl;
+    }
+}
